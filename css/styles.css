@@ -14,5 +14,28 @@
 }
 
 .login-btn{
-    width:320px;
+    width:300px;
+}
+
+/*register page styles*/
+
+.register-container {
+    max-width: 550px;
+    max-height: 750px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-text{
+    font-size: 13px !important;
+}
+
+.register-form-link-text{
+    text-decoration: underline;
+}
+
+.register-btn{
+    width:300px;
 }
