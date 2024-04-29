@@ -1,0 +1,18 @@
+/*login Page styles*/
+
+.login-container {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.login-form-link-text{
+    text-decoration: underline;
+}
+
+.login-btn{
+    width:320px;
+}

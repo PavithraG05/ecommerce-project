@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bootstrap</title>
+        <!--link to css file-->
+        <link rel="stylesheet" href="/e-commerce_Project/css/styles.css">
+        <!--link to bootstrap.v5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <!--login form snippet-->
+            <div class="container">
+                <div class="login-container bg-light">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group p-2">
+                            <label for="email">Email Id</label>
+                            <input type="text" class="form-control" id="emailid" placeholder="Email ID*" required>
+                            <div class="invalid-feedback">
+                                Please enter the email id.
+                            </div>
+                        </div>
+                        <div class="form-group p-2">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password*" required>
+                            <div class="invalid-feedback">
+                                Please enter the password.
+                            </div>
+                        </div>
+                        <div class="form-group form-check p-2">
+                            <input type="checkbox" class="form-check-input mx-0" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"> Remember me</label>
+                        </div>
+                        <div class="row p-2 justify-content-center">
+                            <div class="col-auto">
+                                <a href="index.html" class="btn btn-primary btn-lg-block login-btn" type="submit">login</a>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-6 form-group">
+                                <a href="#">
+                                    <label class="form-link login-form-link-text" for="forgotPassword">Forgot Password?</label>
+                                </a>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label class="form-link" for="newUserRegister">New user? <a href="register.html" class="login-form-link-text">Register Now</a></label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
