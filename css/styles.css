@@ -1,3 +1,71 @@
+/*Header styles*/
+
+.navbar{
+    background-color:rgb(2, 2, 63);
+    height: 65px;
+}
+
+.navbar-brand img{
+    width:230px;
+    height:45px;
+}
+
+.navbar-content a{
+    font-size: 22px;
+    
+    color:#f8c424;
+}
+
+.bi-person-circle, .bi-cart4, .navbar-toggler-icon{
+    color: #f8c424;
+}
+
+/*Footer styles*/
+
+footer{
+    background-color: rgb(2, 2, 63);
+    color: #f8c424;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-size: 18px;
+}
+
+.footer{
+    height: 120px;
+    text-align: center;
+}
+
+.footer-text{
+    padding:8px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.footer > div > a {
+    text-decoration: none;
+    padding:20px;
+    color: #f8c424;
+}
+
+.bi{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.bi-twitter, .bi-facebook{
+    color:rgb(0, 106, 255);
+}
+
+.bi-youtube{
+    color:red;
+}
+
+.bi-instagram{
+    color:palevioletred;
+}
+
 /*login Page styles*/
 
 .login-container {
@@ -32,10 +100,85 @@
     font-size: 13px !important;
 }
 
+.register-form-link{
+    text-align: center;
+}
+
 .register-form-link-text{
     text-decoration: underline;
 }
 
 .register-btn{
     width:300px;
+}
+
+/*Product Men page styles*/
+
+.product-main{
+    margin:0px 5px 5px 5px; 
+    max-height: 8000px;
+}
+
+.carousel-item {
+    height: 30rem;
+    max-width: 100vw;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-carousel-image1{
+box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+background-image:url('../images/prod-men-carousel-1.webp');
+}
+
+.welcome-carousel-image2{
+box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+background-image:url('../images/prod-men-carousel-2.jpg');
+}
+
+.welcome-carousel-image3{
+box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+background-image:url('../images/prod-men-carousel-3.jpeg');
+}
+
+.welcome-carousel-image4{
+box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+background-image:url('../images/prod-men-carousel-4.jpeg');
+}
+
+.welcome-carousel-image5{
+box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+background-image:url('../images/prod-men-carousel-5.webp');
+}
+
+.prod-category{
+    padding: 20px 20px 30px 20px;
+}
+
+.prod-category-title{
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.1pc;
+    padding: 20px;
+}
+
+.prod-category-row{
+    height:170px;
+}
+
+.prod-category-col{
+    background-color: black;
+    color:white;
+}
+
+.prod-list-area{
+    padding-top: 10px;
+}
+
+.prod-list-button{
+    width:100%;
+    opacity: 0.9;
 }
