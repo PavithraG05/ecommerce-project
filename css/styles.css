@@ -182,3 +182,61 @@ background-image:url('../images/prod-men-carousel-5.webp');
     width:100%;
     opacity: 0.9;
 }
+
+/*Cart page*/
+
+/*Cart title*/
+.cart-title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:dimgray;
+    text-align: center;
+    font-size: 20px;
+    padding:20px 20px 0px 20px;
+    font-weight: 600;
+}
+
+.cart-titlepart{
+    color:black;
+}
+
+.cart-btn, .cart-coupon, .cart-billing{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:60%;
+    margin:15px 0px;
+}
+
+.bi-currency-rupee{
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.cart-billing-title{
+    letter-spacing: 0.8px;
+    font-weight: 500;
+    padding:10px;
+}
+
+.cart-billing > tbody > tr{
+    border:0.1px solid dimgray;
+}
+
+.cart-billing > tbody > tr > td{
+    padding:8px;
+}
+
+.cart-items{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cart-item-card{
+    margin-left: 150px;
+}
+
+.cart-item-title, .card-item-subtitle{
+    font-size: 20px;
+}
+
+
+.cart-item-btn{
+    float: right;
+}

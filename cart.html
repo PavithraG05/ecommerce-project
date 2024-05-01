@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stridesole</title>
+    <link rel="icon" href="/ecommerce-project/images/titleicon.png" sizes="64x64" type="image/x-icon">
+    <!--link to css file-->
+    <link rel="stylesheet" href="/ecommerce-project/css/styles.css">
+    <!--link to bootstrap.v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link to bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header style="height:65px; width:100%" class="bg-dark">
+
+    </header>
+    <main>
+
+        <!--cart title-->
+        <div class="cart-title">
+            <p> <span class="cart-titlepart">My
+                    Bag</span>&nbsp;&nbsp;------&nbsp;&nbsp;Addresss&nbsp;&nbsp;-------&nbsp;&nbsp;Payment</p>
+        </div>
+        <hr>
+
+        <!--cart items and billing area-->
+        <div class="row cart-area border border-black">
+
+            <!--Cart items-->
+            <div class="col-sm-12 col-md-9 col-lg-8 col-xl-7 cart-items border border-black">
+
+                <!--cart item1-->
+                <div class="card mb-4 cart-item-card" style="max-width: 550px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/ecommerce-project/images/prod-men-card2.webp" class="img-fluid rounded-start"
+                                alt="puma shoe added to cart image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title cart-item-title py-1">Puma</h5>
+                                <h6 class="card-subtitle cart-item-subtitle">Unisex Duke Sneakers</h6>
+
+                                <div class="row cart-item-card-form py-3">
+                                    <div class="col-5">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>SIZE: UK 4</option>
+                                            <option value="1">SIZE: UK 5</option>
+                                            <option value="2">SIZE: UK 6</option>
+                                            <option value="3">SIZE: UK 7</option>
+                                            <option value="4">SIZE: UK 8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>QTY: 1</option>
+                                            <option value="1">QTY: 2</option>
+                                            <option value="2">QTY: 3</option>
+                                            <option value="3">QTY: 4</option>
+                                            <option value="4">QTY: 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h6 class="card-subtitle cart-item-price">
+                                    <i class="bi bi-currency-rupee">1999</i><s>2199</s>
+                                    <span class="text-danger"><i class="bi bi-currency-rupee cart-item-discount">200</i>OFF</span>
+                                </h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <button type="button"
+                                    class="btn btn btn-outline-secondary btn-lg-block rounded-0 cart-item-btn">REMOVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--cart item2-->
+                <div class="card mb-4 cart-item-card" style="max-width: 550px;">
+                    <div class="row g-0">
+
+                        <div class="col-md-4">
+                            <img src="/ecommerce-project/images/prod-men-card2.webp" class="img-fluid rounded-start"
+                                alt="puma shoe added to cart image">
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title cart-item-title py-1">Urban Blaze</h5>
+                                <h6 class="card-subtitle cart-item-subtitle">Women Low Top Sneakers</h6>
+                                <div class="row cart-item-card-form py-3">
+                                    <div class="col-5">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>SIZE: UK 4</option>
+                                            <option value="1">SIZE: UK 5</option>
+                                            <option value="2">SIZE: UK 6</option>
+                                            <option value="3">SIZE: UK 7</option>
+                                            <option value="4">SIZE: UK 8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-5">
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>QTY: 1</option>
+                                            <option value="1">QTY: 2</option>
+                                            <option value="2">QTY: 3</option>
+                                            <option value="3">QTY: 4</option>
+                                            <option value="4">QTY: 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h6 class="card-subtitle cart-item-price">
+                                    <i class="bi bi-currency-rupee">2799</i><s>2999</s>
+                                    <span class="text-danger"><i class="bi bi-currency-rupee cart-item-discount">200</i>OFF</span>
+                                </h6>
+                            </div>
+
+                            <div class="card-footer">
+                                <button type="button"
+                                    class="btn btn btn-outline-secondary btn-lg-block rounded-0 cart-item-btn">REMOVE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--billing details-->
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-5 cart-billing border border-black">
+                <aside>
+                    <!--Place order button-->
+                    <button type="button" class="btn btn-dark btn-lg-block cart-btn rounded-0">PLACE ORDER</button>
+
+                    <!--Coupon redeem form-->
+                    <div class="card text-center cart-coupon rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Redeem Coupon</h5>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter the Coupon code"
+                                    aria-label="Coupon-code" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Billing details-->
+                    <table class="cart-billing border border-black">
+                        <thead>
+                            <tr>
+                                <td class="cart-billing-title">Billing Details</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cart Total(Excl. of all taxes) </td>
+                                <td>&nbsp;<i class="bi bi-currency-rupee">4466.10</i></td>
+                            </tr>
+                            <tr class="text-success">
+                                <td>Discount</td>
+                                <td>-<i class="bi bi-currency-rupee">400.00</i></td>
+                            </tr>
+                            <tr>
+                                <td>GST</td>
+                                <td>&nbsp;<i class="bi bi-currency-rupee">731.90</i></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping Charges</td>
+                                <td>&nbsp;<i class="bi bi-currency-rupee">0</i></td>
+                            </tr>
+                            <tr class="fw-bolder">
+                                <td>Total Amount</td>
+                                <td>&nbsp;<i class="bi bi-currency-rupee">4798.00</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
