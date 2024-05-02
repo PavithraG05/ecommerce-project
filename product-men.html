@@ -14,7 +14,7 @@
     </head>
     <body>
         
-        <header style="height:65px;width:100%;background-color: rgb(2, 2, 63);">
+        <header style="height:65px;width:100%;background-color: black;">
         </header>
         
         <main class="product-main">
@@ -35,10 +35,27 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item welcome-carousel-image1 active">
+                        <div class="carousel-caption prod-carousel-caption1">
+                            <h5>EXPLORE OUR EXCLUSIVE RANGE</h5>
+                            <p></p>
+                        </div>
                     </div>
                     <div class="carousel-item welcome-carousel-image2">
+                        <div class="carousel-caption text-start prod-carousel-caption2">
+                            <h1>SNEAKIN' & STYLIN' ALL DAY</h1>
+                            <p>MIN. 20% OFF</p>
+                            <p>
+                                <a class="btn btn-lg btn-dark rounded-0" href="product-men.html" role="button">SHOP NOW</a>
+                            </p>
+                        </div>
                     </div>
                     <div class="carousel-item welcome-carousel-image3">
+                        <div class="carousel-caption text-start prod-carousel-caption3">
+                            <h1>SASS IT UP WITH SNEAKERS</h1>
+                            <p>
+                                <a class="btn btn-lg btn-info rounded-0" href="product-men.html" role="button">SHOP NOW</a>
+                            </p>
+                        </div>
                     </div>
                     <div class="carousel-item welcome-carousel-image4">
                     </div>
@@ -57,18 +74,25 @@
 
             <!--Breadcrumbs-->
             <div class="prod-breadcrumbs">
-                <div class="row">
+                <div class="row prod-breadcrumbs-area border border-warning">
                     <!--Breadcrumbs-->
-                    <div class="col-md-6">
-                            
+                    <div class="col-6">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="prod-breadcrumb-link" href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Men Sneakers</li>
+                            </ol>
+                        </nav>
                     </div>
                     <!--Sort option-->
-                    <div class="col-md-6 pull-right">
-                        <select class="form-select-" aria-label="Default select example">
-                            <option selected>Sort</option>
+                    <div class="col-6">
+                        <select class="form-select- form-select-md prod-sort" aria-label="Default select example">
+                            <option selected>Sort Products By</P></option>
                             <option value="1">Price: Low to High</option>
                             <option value="2">Price: High to Low</option>
                             <option value="3">Alphabetically</option>
+                            <option value="4">Best Selling</option>
+                            <option value="5">Newest</option>
                           </select>
                     </div>
                 </div>
@@ -368,7 +392,6 @@
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
