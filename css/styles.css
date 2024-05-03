@@ -32,14 +32,18 @@ footer{
 }
 
 .footer{
-    height: 120px;
+    height: 150px;
     text-align: center;
 }
 
 .footer-text{
-    padding:8px;
-    font-size: 14px;
+    padding:10px;
+    font-size: 18px;
     opacity: 0.7;
+}
+
+.footer-nav-links{
+    padding:10px;
 }
 
 .footer > div > a {
@@ -78,6 +82,8 @@ footer{
 
 .login-form-link-text{
     text-decoration: underline;
+    color: black;
+    font-weight: 500;
 }
 
 .login-btn{
@@ -88,7 +94,7 @@ footer{
 
 .register-container {
     max-width: 550px;
-    max-height: 750px;
+    max-height: 850px;
     margin: 100px auto;
     padding: 30px;
     border: 1px solid #ccc;
@@ -105,12 +111,77 @@ footer{
 
 .register-form-link-text{
     text-decoration: underline;
+    color: black;
+    font-weight: 500;
 }
 
 .register-btn{
     width:300px;
 }
 
+/*Home Page*/
+
+/*Home page category*/
+.home-prod-category{
+    padding: 20px 20px 30px 20px;
+}
+
+.home-prod-model-row{
+    padding:12px 0px 12px 12px;
+}
+.home-prod-category-title{
+    text-align: center;
+    font-family: "Source Sans Pro";
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.1pc;
+    padding: 20px;
+}
+
+.home-prod-category-row,.home-prod-model-row{
+    height:30px;
+    width: 100%;
+}
+
+.home-prod-category-col{
+    padding: auto;
+}
+
+.home-model-col{
+    padding:20px 40px;
+}
+
+.home-prod-category-col img{
+    height:100%;
+    width:100%;
+}
+
+.home-model-col img{
+    height:100%;
+    width:100%;
+}
+
+.home-prod-quote{
+    font-family:"Lugrasimo";
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+.home-about-sneakers{
+    padding: 20px 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 22px;
+    text-align: justify;
+    font-style: italic;
+}
+
+.lugrasimo-regular {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /*Product Men page*/
 
@@ -143,28 +214,29 @@ footer{
 
 .welcome-carousel-image1{
 box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-background-image:url('../images/prod-men-carousel-1.webp');
+background-image:url('../images/prod-carousel-1.webp');
 }
 
 .welcome-carousel-image2{
 box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-background-image:url('../images/prod-men-carousel-2.jpg');
+background-image:url('../images/prod-carousel-2.jpg');
 }
 
 .welcome-carousel-image3{
 box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-background-image:url('../images/prod-men-carousel-3.jpeg');
+background-image:url('../images/prod-carousel-3.jpeg');
 }
 
 .welcome-carousel-image4{
 box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-background-image:url('../images/prod-men-carousel-4.jpeg');
+background-image:url('../images/prod-carousel-4.jpeg');
 }
 
 .welcome-carousel-image5{
 box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-background-image:url('../images/prod-men-carousel-5.webp');
+background-image:url('../images/prod-arousel-5.webp');
 }
+
 
 /*Product breadcrumbs*/
 .prod-breadcrumbs-area{
@@ -235,9 +307,16 @@ background-image:url('../images/prod-men-carousel-5.webp');
 
 
 /*Product page card list*/
+
 .prod-list-area{
     padding: 10px 0px;
     margin-left: 10px;
+}
+
+.prod-card-img-top{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
 
 .prod-list-button{
@@ -298,10 +377,16 @@ background-image:url('../images/prod-men-carousel-5.webp');
     font-size: 20px;
 }
 
+.cart-img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
 
 .cart-item-btn{
     float: right;
 }
+
 
 /*Order payment*/
 
@@ -337,4 +422,16 @@ background-image:url('../images/prod-men-carousel-5.webp');
 
 .order-border{
     border: 0.5px solid lightgray;
+}
+
+/*Contact Page*/
+.contact-subtitle{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;   
+}
+
+@media (max-width: 768px) {
+    .banner {
+      display: none;
+    }
 }
