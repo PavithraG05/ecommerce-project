@@ -97,7 +97,7 @@
             <div class="prod-breadcrumbs">
                 <div class="row prod-breadcrumbs-area">
                     <!--Breadcrumbs-->
-                    <div class="col-6">
+                    <div class="col-6 prod-breadcrumbs-area-col">
                         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a class="prod-breadcrumb-link" href="index.html">Home</a></li>
@@ -106,7 +106,7 @@
                         </nav>
                     </div>
                     <!--Sort option-->
-                    <div class="col-6">
+                    <div class="col-6 prod-breadcrumbs-area-col">
                         <select class="form-select- form-select-md prod-sort" aria-label="Default select example">
                             <option selected>Sort Products By</P></option>
                             <option value="1">Price: Low to High</option>
@@ -126,13 +126,19 @@
 
                     <!--product filter-->
                     
-                    <div class="col-3 prod-filter">
+                    <div class="col-md-3 col-lg-3 prod-filter">
                         <div class="prod-filter-title">FILTER</div>
                         <div class="prod-filter-form">
                             <form>
 
                                 <!--Brand Checkbox-->
                                 <div class="prod-filter-form-title">BRAND</div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAdidas">
+                                    <label class="form-check-label" for="flexCheckAdidas">
+                                        Adidas
+                                    </label>
+                                </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckPuma">
                                     <label class="form-check-label" for="flexCheckPuma">
@@ -275,18 +281,18 @@
                     </div>
 
                     <!--product list-->
-                    <div class="col-9 prod-list">
+                    <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 prod-list">
                         <div class="container prod-list-container">
 
                             <!--rows and columns-->
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 prod-list-row">
                                 <div class="col">
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card1.webp" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Adidas</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 3679 <s>Rs 6999</s> (50% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -295,9 +301,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card2.webp" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">New Balance</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 2599 <s>Rs 4999</s> (50% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -306,9 +312,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card3.jpeg" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Nike</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 3599 <s>Rs 3999</s> (20% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -320,7 +326,7 @@
                                         <div class="card-body">
                                         <h5 class="card-title">Puma</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 6679 <s>Rs 8999</s> (25% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -329,9 +335,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card5.jpeg" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Dunks</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 3799 <s>Rs 3999</s> (10% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -340,9 +346,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card6.webp" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">New balance</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 9599 <s>Rs 9999</s> (15% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -351,9 +357,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card7.webp" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Nike</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 7599 <s>Rs 7999</s> (10% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -362,9 +368,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card8.avif" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Yeezy</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 8999 <s>Rs 10999</s> (30% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -373,9 +379,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card9.jpeg" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Jordans</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 7779 <s>Rs 8999</s> (10% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -384,9 +390,9 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card10.avif" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Puma Motorsport</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 6999 <s>Rs 9999</s> (25% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
@@ -395,7 +401,7 @@
                                     <div class="card rounded-0">
                                         <img src="/ecommerce-project/images/prod-men-card11.avif" class="prod-card-img-top" alt="...">
                                         <div class="card-body">
-                                        <h5 class="card-title">Puma</h5>
+                                        <h5 class="card-title">Adidas</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
                                         </div>
@@ -408,7 +414,7 @@
                                         <div class="card-body">
                                         <h5 class="card-title">Puma</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
-                                        <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
+                                        <h6 class="card-text">Rs 7599 <s>Rs 7999</s> (10% off)</h6>
                                         </div>
                                         <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>

@@ -30,6 +30,7 @@ footer{
     width: 100%;
     font-size: 15px;
     opacity: 0.9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .footer{
@@ -254,7 +255,7 @@ background-image:url('../images/prod-carousel-5.webp');
 
 /*Product breadcrumbs*/
 .prod-breadcrumbs-area{
-    padding:12px;
+    padding:12px 12px;
 }
 
 .breadcrumb-item{
@@ -269,6 +270,7 @@ background-image:url('../images/prod-carousel-5.webp');
 
 .prod-sort{
     float: right;
+    padding-right: 0px;
 }
 
 /*Product page filter form*/
@@ -313,6 +315,7 @@ background-image:url('../images/prod-carousel-5.webp');
     padding: 10px 0px;
     margin-left: 10px;
     padding-bottom: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .prod-card-img-top{
@@ -337,18 +340,28 @@ background-image:url('../images/prod-carousel-5.webp');
       display: none;
     }
 
-    .prod-list-container{
-        margin: 15px auto;
-        float: none;
-    }
+
 
     .prod-card-img-top{
         width: 100%;
-        height: 20vw;
+        height: 25vw;
         object-fit: cover;
     }
     
-  }
+}
+
+@media (max-width: 576px) {
+.prod-filter {
+    display: none;
+}
+
+.prod-card-img-top{
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+}
+
+}
 
 
 /*Cart page*/
