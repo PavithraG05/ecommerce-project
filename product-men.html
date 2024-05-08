@@ -1,449 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Stridesole</title>
-        <link rel="icon" href="/ecommerce-project/images/titleicon.png" sizes="64x64" type="image/x-icon">
-        <!--link to css file-->
-        <link rel="stylesheet" href="/ecommerce-project/css/styles.css">
-        <!--link to bootstrap.v5-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!--link to bootstrap icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-        
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                <div class="container-fluid gx-0">
-                    <a class="navbar-brand" href="index.html" >
-                        <img src="/ecommerce-project/images/logo1.png" alt="3D fonts">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav header-nav">
-                            <a class="nav-link header-nav-link active" aria-current="page" href="index.html">Home</a>
-                            <a class="nav-link header-nav-link" href="product-men.html">Men</a>
-                            <a class="nav-link header-nav-link" href="product-women.html">Women</a>
-                            <a class="nav-link header-nav-link" href="product-kids.html">Kids</a>
-                            <a class="nav-link header-nav-link" href="index.html#about-sneakers">About</a>
-                            <a class="nav-link header-nav-link" href="cart.html"><i class="bi bi-cart4"></i>Cart</a>
-                            <a class="nav-link header-nav-link" href="login.html"><i class="bi bi-person-circle"></i>Login</a>
-                        </div>
-                    </div> 
-                </div>
-            </nav>
-        </header>
-        
-        <main class="product-main">
-            
-            <!--Carousel section-->
-            <div id="welcomeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Welcome 1"></button>
-                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
-                        aria-label="Welcome 2"></button>
-                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
-                        aria-label="Welcome 3"></button>
-                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="3"
-                        aria-label="Welcome 4"></button>
-                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="4"
-                        aria-label="Welcome 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item welcome-carousel-image1 active">
-                        <div class="carousel-caption prod-carousel-caption1">
-                            <h5>EXPLORE OUR EXCLUSIVE RANGE</h5>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="carousel-item welcome-carousel-image2">
-                        <div class="carousel-caption text-start prod-carousel-caption2">
-                            <h1>SNEAKIN' & STYLIN' ALL DAY</h1>
-                            <p>MIN. 20% OFF</p>
-                            <p>
-                                <a class="btn btn-lg btn-dark rounded-0" href="product-men.html" role="button">SHOP NOW</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item welcome-carousel-image3">
-                        <div class="carousel-caption text-start prod-carousel-caption3">
-                            <h1>SASS IT UP WITH SNEAKERS</h1>
-                            <p>
-                                <a class="btn btn-lg btn-info rounded-0" href="product-men.html" role="button">SHOP NOW</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item welcome-carousel-image4">
-                    </div>
-                    <div class="carousel-item welcome-carousel-image5">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stridesole</title>
+    <link rel="icon" href="/ecommerce-project/images/titleicon.png" sizes="64x64" type="image/x-icon">
+    <!--link to css file-->
+    <link rel="stylesheet" href="/ecommerce-project/css/styles.css">
+    <!--link to bootstrap.v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link to bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid gx-0">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/ecommerce-project/images/logo1.png" alt="3D fonts">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav header-nav">
+                        <a class="nav-link header-nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link header-nav-link" href="product-men.html">Men</a>
+                        <a class="nav-link header-nav-link" href="product-women.html">Women</a>
+                        <a class="nav-link header-nav-link" href="product-kids.html">Kids</a>
+                        <a class="nav-link header-nav-link" href="index.html#about-sneakers">About</a>
+                        <a class="nav-link header-nav-link" href="cart.html"><i class="bi bi-cart4"></i>Cart</a>
+                        <a class="nav-link header-nav-link" href="login.html"><i
+                                class="bi bi-person-circle"></i>Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-main">
+
+        <!--Carousel section-->
+        <div id="welcomeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Welcome 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Welcome 3"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="3"
+                    aria-label="Welcome 4"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="4"
+                    aria-label="Welcome 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item welcome-carousel-image1 active">
+                    <div class="carousel-caption prod-carousel-caption1">
+                        <h5>EXPLORE OUR EXCLUSIVE RANGE</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                    <div class="carousel-caption text-start prod-carousel-caption2">
+                        <h1>SNEAKIN' & STYLIN' ALL DAY</h1>
+                        <p>MIN. 20% OFF</p>
+                        <p>
+                            <a class="btn btn-lg btn-dark rounded-0" href="product-men.html" role="button">SHOP NOW</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                    <div class="carousel-caption text-start prod-carousel-caption3">
+                        <h1>SASS IT UP WITH SNEAKERS</h1>
+                        <p>
+                            <a class="btn btn-lg btn-info rounded-0" href="product-men.html" role="button">SHOP NOW</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image4">
+                </div>
+                <div class="carousel-item welcome-carousel-image5">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Breadcrumbs-->
+        <div class="prod-breadcrumbs">
+            <div class="row prod-breadcrumbs-area">
+                <!--Breadcrumbs-->
+                <div class="col-6 prod-breadcrumbs-area-col">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="prod-breadcrumb-link" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Men Sneakers</li>
+                        </ol>
+                    </nav>
+                </div>
+                <!--Sort option-->
+                <div class="col-6 prod-breadcrumbs-area-col">
+                    <select class="form-select- form-select-md prod-sort" aria-label="Default select example">
+                        <option selected>Sort Products By</P>
+                        </option>
+                        <option value="1">Price: Low to High</option>
+                        <option value="2">Price: High to Low</option>
+                        <option value="3">Alphabetically</option>
+                        <option value="4">Best Selling</option>
+                        <option value="5">Newest</option>
+                    </select>
+                </div>
             </div>
 
-            <!--Breadcrumbs-->
-            <div class="prod-breadcrumbs">
-                <div class="row prod-breadcrumbs-area">
-                    <!--Breadcrumbs-->
-                    <div class="col-6 prod-breadcrumbs-area-col">
-                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a class="prod-breadcrumb-link" href="index.html">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Men Sneakers</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <!--Sort option-->
-                    <div class="col-6 prod-breadcrumbs-area-col">
-                        <select class="form-select- form-select-md prod-sort" aria-label="Default select example">
-                            <option selected>Sort Products By</P></option>
-                            <option value="1">Price: Low to High</option>
-                            <option value="2">Price: High to Low</option>
-                            <option value="3">Alphabetically</option>
-                            <option value="4">Best Selling</option>
-                            <option value="5">Newest</option>
-                          </select>
+        </div>
+
+        <!--Product area-->
+        <div class="prod-list-area">
+            <div class="row">
+
+                <!--product filter-->
+
+                <div class="col-md-3 col-lg-3 prod-filter">
+                    <div class="prod-filter-title">FILTER</div>
+                    <div class="prod-filter-form">
+                        <form>
+
+                            <!--Brand Checkbox-->
+                            <div class="prod-filter-form-title">BRAND</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckAdidas">
+                                <label class="form-check-label" for="flexCheckAdidas">
+                                    Adidas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckPuma">
+                                <label class="form-check-label" for="flexCheckPuma">
+                                    Puma
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckPumaMotor">
+                                <label class="form-check-label" for="flexCheckPumaMotor">
+                                    Puma Motorsport
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckAdidas">
+                                <label class="form-check-label" for="flexCheckAdidas">
+                                    Adidas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNike">
+                                <label class="form-check-label" for="flexCheckNike">
+                                    Nike
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckJordans">
+                                <label class="form-check-label" for="flexCheckJordans">
+                                    Jordans
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDunks">
+                                <label class="form-check-label" for="flexCheckDunks">
+                                    Dunks
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNew Balance">
+                                <label class="form-check-label" for="flexCheckNew Balance">
+                                    New Balance
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckYeezy">
+                                <label class="form-check-label" for="flexCheckYeezy">
+                                    Yeezy
+                                </label>
+                            </div>
+                            <hr>
+
+                            <!--Price range-->
+                            <div class="prod-filter-form-title">PRICE</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckprice1">
+                                <label class="form-check-label" for="flexCheckprice1">
+                                    Rs1000 to Rs2999
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckprice2">
+                                <label class="form-check-label" for="flexCheckprice2">
+                                    Rs3000 to Rs5999
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckprice3">
+                                <label class="form-check-label" for="flexCheckprice3">
+                                    Rs6000 to Rs9999
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckprice4">
+                                <label class="form-check-label" for="flexCheckprice4">
+                                    Rs10000 to Rs14999
+                                </label>
+                            </div>
+                            <hr>
+
+                            <!--Color checkbox-->
+                            <div class="prod-filter-form-title">COLOR</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckBlack">
+                                <label class="form-check-label" for="flexCheckBlack">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-black"></span>&nbsp;Black
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckBlue">
+                                <label class="form-check-label" for="flexCheckBlue">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-primary"></span>&nbsp;Blue
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckYellow">
+                                <label class="form-check-label" for="flexCheckYellow">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-warning"></span>&nbsp;Yellow
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckGreen">
+                                <label class="form-check-label" for="flexCheckGreen">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-success"></span>&nbsp;Green
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckRed">
+                                <label class="form-check-label" for="flexCheckRed">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-danger"></span>&nbsp;Red
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckLight blue">
+                                <label class="form-check-label" for="flexCheckLight blue">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-info"></span>&nbsp;Light blue
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckwhite">
+                                <label class="form-check-label" for="flexCheckwhite">
+                                    <div class="prod-color">
+                                        <span class="prod-filter-color-dot bg-white"></span>&nbsp;White
+                                    </div>
+                                </label>
+                            </div>
+                            <hr>
+                        </form>
                     </div>
                 </div>
-                
-            </div>
-            
-            <!--Product area-->
-            <div class="prod-list-area">
-                <div class="row">
 
-                    <!--product filter-->
-                    
-                    <div class="col-md-3 col-lg-3 prod-filter">
-                        <div class="prod-filter-title">FILTER</div>
-                        <div class="prod-filter-form">
-                            <form>
+                <!--product list-->
+                <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 prod-list">
+                    <div class="container prod-list-container">
 
-                                <!--Brand Checkbox-->
-                                <div class="prod-filter-form-title">BRAND</div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAdidas">
-                                    <label class="form-check-label" for="flexCheckAdidas">
-                                        Adidas
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckPuma">
-                                    <label class="form-check-label" for="flexCheckPuma">
-                                        Puma
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckPumaMotor">
-                                    <label class="form-check-label" for="flexCheckPumaMotor">
-                                        Puma Motorsport
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckAdidas">
-                                    <label class="form-check-label" for="flexCheckAdidas">
-                                        Adidas
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckNike">
-                                    <label class="form-check-label" for="flexCheckNike">
-                                        Nike
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckJordans">
-                                    <label class="form-check-label" for="flexCheckJordans">
-                                        Jordans
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDunks">
-                                    <label class="form-check-label" for="flexCheckDunks">
-                                        Dunks
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckNew Balance">
-                                    <label class="form-check-label" for="flexCheckNew Balance">
-                                        New Balance
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckYeezy">
-                                    <label class="form-check-label" for="flexCheckYeezy">
-                                        Yeezy
-                                    </label>
-                                </div>
-                                <hr>
-
-                                <!--Price range-->
-                                <div class="prod-filter-form-title">PRICE</div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckprice1">
-                                    <label class="form-check-label" for="flexCheckprice1">
-                                        Rs1000 to Rs2999
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckprice2">
-                                    <label class="form-check-label" for="flexCheckprice2">
-                                        Rs3000 to Rs5999
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckprice3">
-                                    <label class="form-check-label" for="flexCheckprice3">
-                                        Rs6000 to Rs9999
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckprice4">
-                                    <label class="form-check-label" for="flexCheckprice4">
-                                        Rs10000 to Rs14999
-                                    </label>
-                                </div>
-                                <hr>
-
-                                <!--Color checkbox-->
-                                <div class="prod-filter-form-title">COLOR</div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckBlack">
-                                    <label class="form-check-label" for="flexCheckBlack">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-black"></span>&nbsp;Black
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckBlue">
-                                    <label class="form-check-label" for="flexCheckBlue">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-primary"></span>&nbsp;Blue
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckYellow">
-                                    <label class="form-check-label" for="flexCheckYellow">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-warning"></span>&nbsp;Yellow
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckGreen">
-                                    <label class="form-check-label" for="flexCheckGreen">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-success"></span>&nbsp;Green
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckRed">
-                                    <label class="form-check-label" for="flexCheckRed">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-danger"></span>&nbsp;Red
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckLight blue">
-                                    <label class="form-check-label" for="flexCheckLight blue">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-info"></span>&nbsp;Light blue
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckwhite">
-                                    <label class="form-check-label" for="flexCheckwhite">
-                                        <div class="prod-color">
-                                            <span class="prod-filter-color-dot bg-white"></span>&nbsp;White
-                                        </div>
-                                    </label>
-                                </div>
-                                <hr>
-                            </form>
-                        </div>
-                    </div>
-
-                    <!--product list-->
-                    <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9 prod-list">
-                        <div class="container prod-list-container">
-
-                            <!--rows and columns-->
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 prod-list-row">
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card1.webp" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                        <!--rows and columns-->
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 prod-list-row">
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card1.webp" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Adidas</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 3679 <s>Rs 6999</s> (50% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card2.webp" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card2.webp" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">New Balance</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 2599 <s>Rs 4999</s> (50% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card3.jpeg" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card3.jpeg" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Nike</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 3599 <s>Rs 3999</s> (20% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                            
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card4.avif" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card4.avif" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Puma</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 6679 <s>Rs 8999</s> (25% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card5.jpeg" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card5.jpeg" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Dunks</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 3799 <s>Rs 3999</s> (10% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card6.webp" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card6.webp" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">New balance</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 9599 <s>Rs 9999</s> (15% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card7.webp" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card7.webp" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Nike</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 7599 <s>Rs 7999</s> (10% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card8.avif" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card8.avif" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Yeezy</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 8999 <s>Rs 10999</s> (30% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card9.jpeg" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card9.jpeg" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Jordans</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 7779 <s>Rs 8999</s> (10% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card10.avif" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card10.avif" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Puma Motorsport</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 6999 <s>Rs 9999</s> (25% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card11.avif" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card11.avif" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Adidas</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 1679 <s>Rs 3999</s> (50% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
-                                <div class="col">
-                                    <div class="card rounded-0">
-                                        <img src="/ecommerce-project/images/prod-men-card12.jpeg" class="prod-card-img-top" alt="...">
-                                        <div class="card-body">
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-0">
+                                    <img src="/ecommerce-project/images/prod-men-card12.jpeg" class="prod-card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
                                         <h5 class="card-title">Puma</h5>
                                         <h6 class="card-subtitle">Unisex Duke Sneakers</h6>
                                         <h6 class="card-text">Rs 7599 <s>Rs 7999</s> (10% off)</h6>
-                                        </div>
-                                        <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                     </div>
+                                    <a href="cart.html" class="btn btn-dark prod-list-button rounded-0">Add to cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="footer border border-dark">
-                <div class="footer-icons">
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-youtube"></i>
-                </div>
-                <div class="footer-nav-links">
-                    <a href="index.html" alt="link to Home page">Home</a>
-                    <a href="contact.html" alt="link to contact us page">Contact</a>
-                    <a href="index.html#about-sneakers" alt="link to about us page">About</a>
-                </div>
-                <div class="footer-text">
-                    <span>&copy; 2024  stridesole.com. All rights reserved</span>
-                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer border border-dark">
+            <div class="footer-icons">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-youtube"></i>
             </div>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+            <div class="footer-nav-links">
+                <a href="index.html" alt="link to Home page">Home</a>
+                <a href="contact.html" alt="link to contact us page">Contact</a>
+                <a href="index.html#about-sneakers" alt="link to about us page">About</a>
+            </div>
+            <div class="footer-text">
+                <span>&copy; 2024 stridesole.com. All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
